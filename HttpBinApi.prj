@@ -6,6 +6,7 @@
    <UUID>25c7f958-410e-447a-a219-859f34201aa4</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/Ona/git/HttpBinApi/HttpBinApi.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
