@@ -44,19 +44,19 @@ import cucumber.api.java.en.When
 
 
 class CRUD {
-	
+
 	def response
-	
+
 	@When("I request (.*)")
 	def I_check_for_the_value_in_step2(String post_api) {
-		 response = WS.sendRequest(findTestObject(post_api))
+		response = WS.sendRequest(findTestObject(post_api))
 	}
 
 	@Then("I verify the status code is 200")
 	def I_verify_the_status_in_step2() {
 		WS.verifyResponseStatusCode(response, 200, FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@And("I verify the url value in payload is (.*)")
 	def I_verify_the_url_value_in_payload_is(String url){
 		WS.verifyElementPropertyValue(response,"url", url)
